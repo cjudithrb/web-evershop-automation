@@ -11,7 +11,7 @@ def setup_browser():
     chrome_options = Options()
     #chrome_options.add_argument("--headless")  # Ejecutar en modo headless (sin interfaz gráfica)
     chrome_options.add_argument("--disable-gpu")  # Deshabilitar GPU
-    service = Service(executable_path="J:/Personal/Entrevistas/Tranzact/web-automation/drivers/chromedriver.exe")  # Ajusta la ruta si es necesario
+    service = Service(executable_path="/drivers/chromedriver.exe")  # Ajusta la ruta si es necesario
     driver = webdriver.Chrome(service=service, options=chrome_options)
     return driver
 
